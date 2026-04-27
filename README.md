@@ -1,69 +1,81 @@
-# DATA 205 Capstone Project  
-## Socioeconomic Comparison: Montgomery County vs. Prince George’s County
+# Data 205 Capstone Project
 
-### 👩‍💻 Author  
-Farah Makkawi  
+**Analysis of Income, Education, Population, and Internet Access in Maryland Counties**
 
----
+## Overview
 
-## 📊 Project Overview  
-This capstone project analyzes and compares key socioeconomic factors between **Montgomery County** and **Prince George’s County** in Maryland.  
+This project analyzes socioeconomic differences across counties in Maryland using data from the U.S. Census Bureau (American Community Survey). The focus is on understanding how education, income, population, and internet access are related, with a comparison between Montgomery County and Prince George’s County.
 
-The goal is to understand how these two neighboring counties differ in terms of income, population, and overall economic conditions using real-world data.
+## Research Question
 
----
+How are education level, income, population, and internet access related across Maryland counties, and how do these factors differ between Montgomery County and Prince George’s County?
 
-## 🎯 Objectives  
-- Compare median household income between the two counties  
-- Analyze population differences  
-- Identify patterns and disparities in socioeconomic conditions  
-- Present findings using clear data visualizations  
+## Data Sources
 
----
+The datasets used in this project come from the U.S. Census Bureau (ACS 5-Year Estimates):
 
-## 🗂️ Data Sources  
-- U.S. Census Data  
-- Montgomery County Open Data Portal  
+* **S1901** – Median Household Income
+* **S1501** – Educational Attainment
+* **DP05** – Population (Demographic Data)
+* **S2801** – Internet Access
 
----
+All datasets were downloaded from: https://data.census.gov/
 
-## 🛠️ Tools & Technologies  
-- Python (Google Colab)  
-- Pandas (data cleaning and analysis)  
-- Matplotlib (data visualization)  
-- GitHub (project organization and submission)  
+## Tools Used
 
----
+* Python
+* Google Colab
+* pandas (data cleaning and merging)
+* matplotlib (data visualization)
 
-## 📈 Methods  
-- Cleaned and filtered datasets using Pandas  
-- Selected relevant variables such as income and population  
-- Created bar charts to compare counties  
-- Interpreted trends and differences in the data  
+## Project Workflow
 
----
+### 1. Data Collection
 
-## 📊 Key Findings  
-- Montgomery County has a higher median household income compared to Prince George’s County  
-- Population sizes differ, with noticeable variation in distribution  
-- The data highlights economic disparities between the two regions  
+Downloaded multiple ACS datasets for all Maryland counties.
 
----
+### 2. Data Cleaning
 
-## 💡 Conclusion  
-This project demonstrates how data analysis can be used to better understand real-world socioeconomic differences. The findings can help support discussions about policy, resource allocation, and community development.
+* Removed unnecessary rows
+* Selected relevant columns
+* Renamed variables for clarity
 
----
+### 3. Data Merging
 
-## 📚 What I Learned  
-- How to work with real-world datasets  
-- How to clean and analyze data using Python  
-- How to create clear and meaningful visualizations  
-- How to present data-driven insights effectively  
+Combined all datasets into a single dataframe using county names.
 
----
+### 4. Analysis
 
-## 🔗 Repository Contents  
-- Jupyter/Colab Notebooks  
-- Data Visualizations  
-- Homework Assignments related to the project  
+* Compared income across counties
+* Analyzed relationship between education and income
+* Examined internet access vs income
+* Compared Montgomery County and Prince George’s County
+
+### 5. Visualization
+
+Created:
+
+* Bar charts (income comparison)
+* Scatter plots (education vs income, internet vs income)
+* Top 10 counties by income
+
+### 6. Statistical Analysis
+
+* Linear regression (education vs income)
+* Correlation analysis
+
+## Key Findings
+
+* There is a strong positive relationship between education and income.
+* Counties with higher percentages of bachelor’s degrees tend to have higher median household incomes.
+* Internet access is also positively associated with income.
+* Montgomery County shows higher income and education levels compared to Prince George’s County.
+
+## Conclusion
+
+This project demonstrates that education and access to resources play an important role in income differences across Maryland counties. The analysis highlights regional disparities and provides insight into socioeconomic patterns within the state.
+
+## Author
+
+Farah Makkawi
+Data 205 – Montgomery College
